@@ -18,4 +18,6 @@ This repository will be used for Web Apps. In it I plan to expand existing knowl
 
 ## Contributors
 Josh Schmitz, Computer Science emphasis in Mobile Computing
+
+
 ![Hosted image](https://github.com/JDSCHMITZ20/joshschmitz/blob/master/bmb%20family.jpg "BMB Family")
