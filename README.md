@@ -20,4 +20,4 @@ This repository will be used for Web Apps. In it I plan to expand existing knowl
 Josh Schmitz, Computer Science emphasis in Mobile Computing
 
 
-![](joshschmitz/bmb family.jpg "BMB Family")
+![Hosted image](joshschmitz/bmb family.jpg)
