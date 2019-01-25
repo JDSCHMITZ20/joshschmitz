@@ -1,7 +1,7 @@
 # joshschmitz
 
 ## Repository Links
-- [Webpage](https://github.com/JDSCHMITZ20/aboutme/blob/master/README.md "Josh Schmitz: About Me Webpage")
+- [Webpage](https://jdschmitz20.github.io/joshschmitz/ "Josh Schmitz: About Me Webpage")
 - [Source](https://github.com/JDSCHMITZ20/aboutme "About Me")
 
 ## About
