@@ -2,58 +2,97 @@
 <html lang="en">
 
 <head>
+        <link rel = "stylesheet" type="text/css" href="mystyles.css">
+
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+
+        .grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #006467;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #006467;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+    </style>
+
     <meta charset="UTF-8" name="author" content="Josh Schmitz">
-    <title>about me</title>
+    <title>about me: home</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/index.html?#">About Me: Josh
-            Schmitz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/index.html?#">Home
-                        <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/agetodays.html">Age
-                        to Days Calculator</a>
-                </li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <div class="grid-container">
+        <div class="item1">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/index.html?#">About
+                    Me: Josh
+                    Schmitz</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/index.html?#">Home
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/agetodays.html">Age
+                                to Days Calculator</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
         </div>
-    </nav>
+        <div class="item2">
+            <header>
+                <h1>Josh Schmitz</h1>
+                <img id="profilepic" src="profile picture.jpg" alt="profile picture" height="100px" width="150px" img-circle>
+            </header>
+        
 
-    <header>
-        <h1>Josh Schmitz</h1>
-        <img src="profile picture.jpg" alt="profile picture">
-    </header>
+        <ul>
+            <li>Secure System Admin</li>
+            <li>Computer Organization</li>
+            <li>Mobile Computing Android</li>
+            <li>Web Apps</li>
+        </ul>
 
-    <ul>
-        <li>High School Degree</li>
-        <li>Introduction to HTML And CSS</li>
-    </ul>
     <ol>
         <li><a href="https://www.linkedin.com/in/joshua-schmitz-885591149/"> LinkedIn</a></li>
     </ol>
+        </div>
 
-    <img id="floridabeach" src="beach picture.jpg" alt="Florida Beach" transform: rotate(90deg)>
-    <br>
+   <br>
+   <div class="item4">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/IrdSfL8w0Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     <p>Helpful video on how to clean a watchface at home!</p>
+   </div>
     <main>
+        <div class="item3">
         <article>
             <section>
                 <h2>Current</h2>
@@ -77,25 +116,31 @@
                 with Swift but I'm not opposed to doing work with android.
             </section>
         </article>
-
-        <aside>
-            The only real interesting thing that comes to mind about me is that I love Horology and currently have 12
-            watches
-            in my collection. Below is a link to my LinkedIn account.
-            <ul>
-                <li><a href="https://www.linkedin.com/in/joshua-schmitz-885591149/"> LinkedIn</a><img src="linkedin icon.png"
-                        alt="LinkedIn icon"></li>
-                <li><a href="https://github.com/JDSCHMITZ20"> GitHub</a><img src="github icon.png" alt="GitHub icon"></li>
-            </ul>
-            Have a good day!
-        </aside>
+        </div>
+            <aside>
+                The only real interesting thing that comes to mind about me is that I love Horology and currently have
+                12
+                watches
+                in my collection. Below is a link to my LinkedIn account.
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/joshua-schmitz-885591149/"> <img id ="icon" src="linkedin icon.png"
+                        alt="LinkedIn icon" height="50px" width="50px"></a></li>
+                    <li><a href="https://github.com/JDSCHMITZ20"><img id="icon" src="github icon.png" alt="GitHub icon" height="50px" width="50px"></a></li>
+                </ul>
+                Have a good day!
+            </aside>
     </main>
 
     <br>
-    <hr>
-    <footer>
-        &copy; 2019 Josh Schmitz
-    </footer>
+    <div class="item5">
+            <img id="floridabeach" src="beach picture.jpg" alt="Florida Beach" height="100px" width="100px"> 
+    <p>Josh Schmitz</p>
+        <hr>
+        <footer>
+            &copy; 2019 Josh Schmitz
+        </footer>
+    </div>
+    </div>
 </body>
 
 </html>
