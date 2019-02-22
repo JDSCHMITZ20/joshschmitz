@@ -4,32 +4,6 @@
 <head>
         <link rel = "stylesheet" type="text/css" href="mystyles.css">
 
-    <style>
-        .item1 { grid-area: header; }
-        .item2 { grid-area: menu; }
-        .item3 { grid-area: main; }
-        .item4 { grid-area: right; }
-        .item5 { grid-area: footer; }
-
-        .grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'footer footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: #006467;
-  padding: 10px;
-}
-
-.grid-container > div {
-  background-color: #006467;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-    </style>
-
     <meta charset="UTF-8" name="author" content="Josh Schmitz">
     <title>about me: home</title>
 </head>
@@ -45,35 +19,36 @@
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-home">
                             <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/index.html?#">Home
-                                <span class="sr-only">(current)</span></a>
+                                <!-- <span class="sr-only">(current)</span>--></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-contact">
                             <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/contact.html">Contact</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-age2day">
                             <a class="nav-link" href="file:///C:/Users/s526395/Documents/44563/joshschmitz/agetodays.html">Age
-                                to Days Calculator</a>
+                                to Days</a>
                         </li>
                     </ul>
+                    <!-- SEARCH BOX, SEEMS USELESS AND UGLY
                     <form class="form-inline mt-2 mt-md-0">
                         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
+                --> 
                 </div>
             </nav>
         </div>
         <div class="item2">
             <header>
-                <h1>Josh Schmitz</h1>
-                <img id="profilepic" src="profile picture.jpg" alt="profile picture" height="100px" width="150px" img-circle>
+                <img id="profilepic" src="pictures/profile picture.jpg" alt="profile picture">
             </header>
         
 
-        <ul>
+        <ul id="classes">
             <li>Secure System Admin</li>
             <li>Computer Organization</li>
             <li>Mobile Computing Android</li>
@@ -81,11 +56,11 @@
         </ul>
 
     <ol>
-        <li><a href="https://www.linkedin.com/in/joshua-schmitz-885591149/"> LinkedIn</a></li>
+        <p>A List of my favorite watches in my collection</p>
+        <li><a href="https://www.amazon.com/Seiko-Prospex-SRPC91-OCCEAN-Special/dp/B07DCRH4ZL/ref=sr_1_fkmrnull_1?crid=10H2CI8GAW7C4&keywords=seiko+save+the+ocean+turtle&qid=1549953614&s=gateway&sprefix=seiko+save%2Caps%2C195&sr=8-1-fkmrnull">Seiko Prospex SRPC91</a></li>
+        <li><a href="https://www.amazon.com/Seiko-SNE241-Solar-Japanese-Quartz/dp/B00B2SJXZW">Seiko SNE241</a></li>
     </ol>
         </div>
-
-   <br>
    <div class="item4">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/IrdSfL8w0Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -121,22 +96,22 @@
                 The only real interesting thing that comes to mind about me is that I love Horology and currently have
                 12
                 watches
-                in my collection. Below is a link to my LinkedIn account.
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/joshua-schmitz-885591149/"> <img id ="icon" src="linkedin icon.png"
-                        alt="LinkedIn icon" height="50px" width="50px"></a></li>
-                    <li><a href="https://github.com/JDSCHMITZ20"><img id="icon" src="github icon.png" alt="GitHub icon" height="50px" width="50px"></a></li>
-                </ul>
+                in my collection. 
                 Have a good day!
             </aside>
     </main>
 
     <br>
     <div class="item5">
-            <img id="floridabeach" src="beach picture.jpg" alt="Florida Beach" height="100px" width="100px"> 
-    <p>Josh Schmitz</p>
-        <hr>
+            <img id="floridabeach" src="pictures/beach picture.jpg" alt="Florida Beach"> 
+            <!--Image credit: Josh Schmitz, Florida Vaction-->
+            <hr>
         <footer>
+                <ul>
+                        <li><a href="https://www.linkedin.com/in/joshua-schmitz-885591149/"> <img id ="icon" src="pictures/linkedin icon.png"
+                            alt="LinkedIn icon" height="50px" width="50px"></a></li>
+                        <li><a href="https://github.com/JDSCHMITZ20"><img id="icon" src="pictures/github icon.png" alt="GitHub icon" height="50px" width="50px"></a></li>
+                    </ul>
             &copy; 2019 Josh Schmitz
         </footer>
     </div>
