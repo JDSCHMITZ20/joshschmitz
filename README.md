@@ -20,3 +20,10 @@ This repository will be used for Web Apps. In it I plan to expand existing knowl
 Josh Schmitz, Computer Science emphasis in Mobile Computing
 
 ![Hosted Image](https://github.com/JDSCHMITZ20/joshschmitz/raw/master/bmb%20family.png "bmb family")
+
+## Updates (2.22.2019)
+1. Used grid container to format Home
+1. Added Navigation bar to all three pages
+1. Added personal css styling to all sites, still switching colors to find a prefered style
+1. Created javascript function to calculate how many days it takes to reach a certain age
+
